@@ -6,7 +6,6 @@ import UseCallback from './components/UseCallback'
 import Memo from './components/Memo'
 import UseMemo from './components/UseMemo'
 import UseReducer from './components/UseReducer'
-import NotFound from './components/NotFound'
 
 interface Route {
     path: string;
@@ -22,5 +21,4 @@ export const routes: Route[] = [
     { path: '/memo', name: 'memo', element: createElement(Memo) },
     { path: '/useMemo', name: 'useMemo()', element: createElement(UseMemo) },
     { path: '/useReducer', name: 'useReducer()', element: createElement(UseReducer) },
-    { path: '*', name: 'NotFound', element: createElement(NotFound) }
 ];
