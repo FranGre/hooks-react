@@ -17,7 +17,7 @@ export default function UseReducer() {
                 </div>
 
                 <H2 text='Parámetros' />
-                <div className="pb-12">
+                <div>
                     <P text='reducer - funciones de nuestro estado' />
                     <P text='initalState - datos iniciales de nuestro estado' />
                 </div>

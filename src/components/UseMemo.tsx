@@ -89,7 +89,7 @@ export default function UseMemo() {
                 </div>
 
                 <H3 text='Usando useMemo()' />
-                <div className="pb-12">
+                <div>
                     <P text='Os propongo realizar varias veces la misma operación con los mismos numbers, vereis en la consola que ya NO se vuelve a llamar a calculate.' />
                     <Callout text='Ya que como el resultado es el mismo, ya no tiene la necesidad de volver a ejecutar calculate.' />
                     <P text='Solucionado el problema de rendimiento' />
