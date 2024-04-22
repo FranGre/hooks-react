@@ -14,7 +14,7 @@ interface Route {
 }
 
 export const routes: Route[] = [
-    { path: '/', name: 'home', element: createElement(Home) },
+    { path: '/hooks-react', name: 'home', element: createElement(Home) },
     { path: '/useState', name: 'useState()', element: createElement(UseState) },
     { path: '/useEffect', name: 'useEffect()', element: createElement(UseEffect) },
     { path: '/useCallback', name: 'useCallback()', element: createElement(UseCallback) },
