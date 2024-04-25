@@ -25,12 +25,14 @@ export default function UseReducer() {
                 </div>
 
                 <H3 text='reducer' />
-                <div>
+                <div className="">
                     <P text='state -> los datos actuales del estado' />
                     <P text='action -> los datos que me envian' />
                 </div>
 
-                <Callout text='Usamos dispatch para poder llamar a los métodos de reducer' />
+                <div className="pb-12">
+                    <Callout text='Usamos dispatch para poder llamar a los métodos de reducer' />
+                </div>
 
                 <H2 text='Ejemplo' />
                 <div className="pb-12">
