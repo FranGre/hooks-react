@@ -14,7 +14,7 @@ export default function UseMemo() {
             <Article>
                 <div className="pb-12">
                     <P>Permite memorizar el resultado de una función y la vuelve a ejecutar si el valor de las dependencias han cambiado. Sinó, guarda la función en memoria y así ya no la vuelve a ejecutar.</P>
-                    < P>Esto es útil cuando tienes una función costosa en términos de rendimiento y quieres evitar que se ejecute nuevamente en cada renderizado, siempre que sus dependencias permanezcan iguales.</P>
+                    <P>Esto es útil cuando tienes una función costosa en términos de rendimiento y quieres evitar que se ejecute nuevamente en cada renderizado, siempre que sus dependencias permanezcan iguales.</P>
                 </div>
 
                 <H2 text='Parámetros'></H2>

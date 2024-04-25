@@ -54,7 +54,7 @@ export default function UseEffect() {
 
                 <H2 text='Consideraciones' />
                 <div className="pb-12">
-                    <P>1ro se declara el useEffect() luego el resto de funciones'</P>
+                    <P>1ro se declara el useEffect() luego el resto de funciones.</P>
                     <P>No puedes usar useEffect dentro de un método, pero si puedes usar métodos dentro de useEffect</P>
                     <P>Cuando pasas variables al array de dependencias, estás diciendo:
                         "Hey React, si alguna de estas variables cambia su valor,
