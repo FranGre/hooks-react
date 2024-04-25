@@ -5,6 +5,7 @@ import Article from "./Article"
 import P from "./P"
 import Callout from "./Callout"
 import { CopyBlock, atomOneDark } from 'react-code-blocks'
+import Highlight from "./Highlight"
 
 export default function Memo() {
 
@@ -13,7 +14,12 @@ export default function Memo() {
             <H1 text='memo' />
             <Article>
                 <div className="pb-12">
-                    <P>Usado para mejorar el rendimiento, ya que evita que un componente se vuelva a renderizar innecesariamente. Básicamente, memoriza el resultado de un componente y lo vuelve a renderizar solo si sus propiedades han cambiado. Esto es útil para componentes funcionales que se están renderizando frecuentemente pero cuyas propiedades no cambian con frecuencia.</P>
+                    <P>Usado para mejorar el rendimiento, ya que evita que un componente se vuelva a
+                        renderizar innecesariamente. Básicamente, memoriza el resultado de un
+                        componente y lo <Highlight backgroundColor='bg-sky-600'>vuelve a renderizar
+                            solo si sus propiedades han cambiado.</Highlight>
+                        Esto es útil para componentes funcionales que se están renderizando frecuentemente
+                        pero cuyas propiedades no cambian con frecuencia.</P>
                 </div>
                 <H2 text='Parámetros' />
                 <div className="pb-12">
@@ -27,7 +33,8 @@ export default function Memo() {
 
                 <H2 text='Ejemplos' />
                 <div className="pb-12">
-                    <P>Para ambos ejemplos, dentro de src creamos la carpeta components y dentro de components creamos Message.tsx</P>
+                    <P>Para ambos ejemplos, dentro de src creamos la carpeta components y dentro de components
+                        creamos Message.tsx</P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
@@ -52,8 +59,8 @@ export default function Memo() {
 
                 <H3 text='Sin usar memo' />
                 <div className="pb-12">
-                    <P>Cada vez que actualicemos el counter, se vuelve a hacer un renderizado del componente App.</P>
-                    <P>Aunque el valor de text no haya cambiado, Message se vuelve a renderizar. Esto es ineficiente.</P>
+                    <P>Cada vez que actualicemos el counter, se <Highlight backgroundColor='bg-sky-600'>vuelve a hacer un renderizado del componente</Highlight> App.</P>
+                    <P>Aunque el valor de text no haya cambiado, Message se vuelve a renderizar. Esto es <Highlight backgroundColor='bg-sky-600'>ineficiente.</Highlight></P>
                     <Callout text='No tenemos que modificar Message.tsx' />
                     <CopyBlock
                         customStyle={{
@@ -100,8 +107,14 @@ export default function Memo() {
 
                 <H3 text='Usando memo (estático)' />
                 <div className="pb-12">
-                    <P>Cada vez que actualicemos el counter, se vuelve a hacer un renderizado del componente App.</P>
-                    <P>Sin embargo, como vamos a añadir memo al componente que recibe las props. El Message no se va a volver a renderizar, debido a que el valor de la prop text que recibe, no ha sido modificado. Es estática.</P>
+                    <P>Cada vez que actualicemos el counter, se vuelve a hacer un renderizado del
+                        componente App.</P>
+                    <P>Sin embargo, como vamos a añadir memo al componente que recibe las props.
+                        El Message <Highlight backgroundColor="bg-cyan-600">no se va a volver a
+                            renderizar</Highlight>, debido a que el valor de la prop
+                        <Highlight backgroundColor="bg-cyan-600">text</Highlight> que recibe,
+                        no ha sido modificado. Es <Highlight backgroundColor="bg-cyan-600">estática.</Highlight>
+                    </P>
 
                     <Callout text='Tenemos que modificar Message.tsx' />
 
@@ -174,8 +187,11 @@ export default function Memo() {
 
                 <H3 text='Usando memo (dinámico)' />
                 <div>
-                    <P>Simplemente le pasamos a text un dato dinámico, en este caso el counter.</P>
-                    <P>Por lo tanto, como el valor de counter se va modificando cada vez que + o -, pues Message se irá renderizado a medida que se actualize el valor de counter.</P>
+                    <P>Simplemente le pasamos a <Highlight backgroundColor="bg-cyan-600">text</Highlight>
+                        un dato <Highlight backgroundColor="bg-cyan-600">dinámico</Highlight>,
+                        en este caso el counter.</P>
+                    <P>Por lo tanto, como el valor de counter se va modificando cada vez que + o -,
+                        pues Message se irá renderizado a medida que se actualize el valor de counter.</P>
 
                     <Callout text='Tenemos que modificar App.tsx' /><CopyBlock
                         customStyle={{

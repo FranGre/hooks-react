@@ -5,6 +5,7 @@ import Article from "./Article"
 import P from "./P"
 import Callout from "./Callout"
 import { CopyBlock, atomOneDark } from 'react-code-blocks'
+import Highlight from "./Highlight"
 
 
 export default function UseCallback() {
@@ -13,7 +14,7 @@ export default function UseCallback() {
             <H1 text='useCallback()' />
             <Article>
                 <div className="pb-12">
-                    <P>Usado para pasar funciones por parámetro a un componente hijo.</P>
+                    <P>Usado para pasar <Highlight backgroundColor="bg-sky-600">funciones por parámetro a un componente hijo.</Highlight></P>
                 </div>
 
                 <H2 text='Parámetros' />
@@ -37,12 +38,23 @@ export default function UseCallback() {
 
                 <H3 text='Sin usar useCallback()' />
                 <div className="pb-12">
-                    <P>Cada vez que el componente padre se renderiza, las funciones dentro de él se crean nuevamente. Esto significa que, incluso si las funciones son idénticas entre renderizados, React las considerará como funciones diferentes. Por lo tanto, cuando pasas estas funciones como props a componentes hijos, esos componentes se vuelven a renderizar innecesariamente, incluso si su lógica interna no ha cambiado.</P>
+                    <P>Cada vez que el componente padre se renderiza, las funciones dentro de él se crean nuevamente.
+                        Esto significa que, incluso si las funciones son idénticas entre renderizados,
+                        React las considerará como funciones diferentes.
+                        Por lo tanto, cuando pasas estas <Highlight backgroundColor="bg-sky-600">funciones como props
+                            a componentes hijos</Highlight>, esos componentes se
+                        <Highlight backgroundColor="bg-sky-600">vuelven a renderizar innecesariamente</Highlight>,
+                        incluso si su lógica interna no ha cambiado.</P>
                 </div>
 
                 <H3 text='Usando useCallback()' />
                 <div className="pb-12">
-                    <P>Estás diciendo a React que "memorice" la función y la mantenga igual entre renderizados, a menos que sus dependencias cambien. Esto significa que React solo reevaluará y recreará la función cuando alguna de sus dependencias cambie. En la mayoría de los casos, esto conduce a un rendimiento más eficiente, ya que evita renderizados innecesarios de componentes hijos que dependen de estas funciones.</P>
+                    <P>Estás diciendo a React que "memorice" la función y la mantenga igual entre renderizados,
+                        a menos que sus dependencias cambien. Esto significa que React solo reevaluará y
+                        recreará la función cuando alguna de sus dependencias cambie. En la mayoría de
+                        los casos, esto conduce a un <Highlight backgroundColor="bg-sky-600">rendimiento más eficiente</Highlight>,
+                        ya que <Highlight backgroundColor="bg-sky-600">evita renderizados innecesarios</Highlight>
+                        de componentes hijos que dependen de estas funciones.</P>
                 </div>
 
                 <H2 text='Ejemplos' />

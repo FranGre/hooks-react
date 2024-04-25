@@ -3,7 +3,7 @@ import H1 from './H1'
 import H2 from './H2'
 import Article from './Article'
 import P from './P'
-
+import Highlight from './Highlight'
 
 export default function UseState() {
     return (
@@ -12,12 +12,12 @@ export default function UseState() {
             <Article>
                 <div className="pb-12">
                     <P>Usado para que el cliente que pueda ver los nuevos cambios del estado o variable en tiempo real</P>
-                    <P>Cabe destacar que useState es usado para estados / variables simples.</P>
+                    <P>Cabe destacar que useState es usado para <Highlight backgroundColor='bg-sky-600'>estados / variables simples.</Highlight></P>
                 </div>
 
                 <H2 text='Ejemplo' />
                 <div>
-                    <P>Funciona devolviendo un arreglo con dos elementos: el estado actual y una función para actualizar ese estado.</P>
+                    <P>Funciona devolviendo un <Highlight backgroundColor='bg-sky-600'>arreglo con dos elementos:</Highlight> el estado actual y una función para actualizar ese estado.</P>
                     <P>Por ejemplo, puedes usar useState para crear una variable de estado llamada count que comienza en 0.</P>
                     <CopyBlock
                         customStyle={{

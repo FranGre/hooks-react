@@ -5,6 +5,7 @@ import Article from "./Article"
 import P from "./P"
 import Callout from "./Callout"
 import { CopyBlock, atomOneDark } from 'react-code-blocks'
+import Highlight from "./Highlight"
 
 
 export default function UseEffect() {
@@ -65,9 +66,9 @@ export default function UseEffect() {
 
                 <H2 text='Usos' />
                 <div className="pb-12">
-                    <P>Llamadas a APIs</P>
+                    <P><Highlight backgroundColor='bg-sky-600'>Llamadas a APIs</Highlight></P>
                     <P>Actualización del DOM</P>
-                    <P>Efectos secundarios una vez el componente haya sido montado, actulizado o desmontado</P>
+                    <P>Efectos secundarios una vez el componente haya sido <Highlight backgroundColor='bg-sky-600'>montado, actulizado o desmontado</Highlight></P>
                 </div>
 
                 <H2 text='Ejemplos' />
@@ -120,7 +121,7 @@ export default function UseEffect() {
 
                 <H3 text='Array con dependencias' />
                 <div className="pb-12">
-                    <P>Cada vez que se cargue de nuevo el componente, cargará el useEffect() sin dependencias y cuando se modifique el valor de counter, solo va a ejecutar el useEffect() que tiene como pendencias la variable counter.</P>
+                    <P>Cada vez que se cargue de nuevo el componente, cargará el useEffect() sin dependencias y cuando se modifique el valor de counter, solo va a ejecutar el useEffect() que tiene como dependencias la variable counter.</P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
