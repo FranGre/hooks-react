@@ -13,8 +13,8 @@ export default function UseMemo() {
             <H1 text='useMemo()' />
             <Article>
                 <div className="pb-12">
-                    <P text='Permite memorizar el resultado de una función y la vuelve a ejecutar si el valor de las dependencias han cambiado. Sinó, guarda la función en memoria y así ya no la vuelve a ejecutar.' />
-                    < P text='Esto es útil cuando tienes una función costosa en términos de rendimiento y quieres evitar que se ejecute nuevamente en cada renderizado, siempre que sus dependencias permanezcan iguales.' />
+                    <P>Permite memorizar el resultado de una función y la vuelve a ejecutar si el valor de las dependencias han cambiado. Sinó, guarda la función en memoria y así ya no la vuelve a ejecutar.</P>
+                    < P>Esto es útil cuando tienes una función costosa en términos de rendimiento y quieres evitar que se ejecute nuevamente en cada renderizado, siempre que sus dependencias permanezcan iguales.</P>
                 </div>
 
                 <H2 text='Parámetros'></H2>
@@ -27,17 +27,17 @@ export default function UseMemo() {
 
                 <H2 text='Consideraciones'></H2>
                 <div className="pb-12">
-                    <P text='Array de dependencias obligatorio'/>
-                    <P text='Cada vez que se modifique el valor de las varibales del array de dependencias, 
-                    automáticamente se volverá a ejecutar dicho useMemo() y lo de dentro de él.'/>
+                    <P>Array de dependencias obligatorio</P>
+                    <P>Cada vez que se modifique el valor de las varibales del array de dependencias,
+                        automáticamente se volverá a ejecutar dicho useMemo() y lo de dentro de él.</P>
                 </div>
 
                 <H2 text='Ejemplos'></H2>
                 <H3 text='Sin useMemo()' />
                 <div className="pb-12">
-                    <P text='Os propongo realizar varias veces la misma operación con los mismos numbers, vereis en la consola que se vuelve a llamar a calculate.' />
+                    <P>Os propongo realizar varias veces la misma operación con los mismos numbers, vereis en la consola que se vuelve a llamar a calculate.</P>
                     <Callout text='Esto es innecesario. Ya que si los valores de numbers no han cambiado, el resultado es el mismo. Por lo tanto no tiene porque volver a ejecutarse calculate.' />
-                    <P text='Esto es un problema de rendimiento' />
+                    <P>Esto es un problema de rendimiento.</P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
@@ -90,9 +90,9 @@ export default function UseMemo() {
 
                 <H3 text='Usando useMemo()' />
                 <div>
-                    <P text='Os propongo realizar varias veces la misma operación con los mismos numbers, vereis en la consola que ya NO se vuelve a llamar a calculate.' />
+                    <P>Os propongo realizar varias veces la misma operación con los mismos numbers, vereis en la consola que ya NO se vuelve a llamar a calculate.</P>
                     <Callout text='Ya que como el resultado es el mismo, ya no tiene la necesidad de volver a ejecutar calculate.' />
-                    <P text='Solucionado el problema de rendimiento' />
+                    <P>Solucionado el problema de rendimiento</P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
@@ -142,8 +142,6 @@ export default function UseMemo() {
         }
                        `} />
                 </div>
-
-
             </Article>
         </>
     )

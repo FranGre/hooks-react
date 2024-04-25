@@ -14,16 +14,16 @@ export default function UseContext() {
 
             <Article>
                 <div className="pb-12">
-                    <P text='Usado para crear estados globales simples.' />
-                    <P text='Imagina que tienes datos que quieres que estén disponibles para varios componentes y no quieres pasar esos datos a través de múltiples niveles de componentes, por props. Ahí es donde el contexto entra en juego.' />
+                    <P>Usado para crear estados globales simples.</P>
+                    <P>Imagina que tienes datos que quieres que estén disponibles para varios componentes y no quieres pasar esos datos a través de múltiples niveles de componentes, por props. Ahí es donde el contexto entra en juego.</P>
                 </div>
 
                 <H2 text='Pasos' />
                 <H3 text='1 - Crear el contexto y el provider' />
                 <div className="pb-12">
-                    <P text='Provider posee toda la lógica, es decir, las variables, métodos para guardar, eliminar etc...' />
-                    <P text='Fijaros que también hago uso de useState(), es decir que si queremos complicarlo más, podríamos usar useReducer().' />
-                    <P text='En value añadimos todas las variables, funciones etc... que queramos que estñen disponibles para el resto de componentes.' />
+                    <P>Provider posee toda la lógica, es decir, las variables, métodos para guardar, eliminar etc...</P>
+                    <P>Fijaros que también hago uso de useState(), es decir que si queremos complicarlo más, podríamos usar useReducer().</P>
+                    <P>En value añadimos todas las variables, funciones etc... que queramos que estñen disponibles para el resto de componentes.</P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
@@ -64,8 +64,8 @@ export default function UseContext() {
 
                 <H3 text='2 - Encapsular el componente superior con UserProvider' />
                 <div className="pb-12">
-                    <P text='En mi caso, quiero que el UserProvider con su value, esté disponible para toda la app.' />
-                    <P text='Por lo tanto lo encapsulo en App.tsx.' />
+                    <P>En mi caso, quiero que el UserProvider con su value, esté disponible para toda la app.</P>
+                    <P>Por lo tanto lo encapsulo en App.tsx.</P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
@@ -99,8 +99,8 @@ export default function UseContext() {
 
                 <H3 text='3 - Usar el contexto' />
                 <div className="pb-12">
-                    <P text='He creado un componente Profile.tsx para usar el UserProvider.' />
-                    <P text='Necesito usar el hook useContext() y dentro añadir el UserContext creado en el 1er paso.' />
+                    <P>He creado un componente Profile.tsx para usar el UserProvider.</P>
+                    <P>Necesito usar el hook useContext() y dentro añadir el UserContext creado en el 1er paso.</P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',

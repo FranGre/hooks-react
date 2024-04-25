@@ -15,19 +15,19 @@ export default function UseReducer() {
 
             <Article >
                 <div className="pb-12">
-                    <P text='Permite manejar estados de una forma más avanzada que useState, es especialmente útil cuando tienes estados complejos o cuando necesitas realizar acciones más sofisticadas sobre tu estado.' />
+                    <P>Permite manejar estados de una forma más avanzada que useState, es especialmente útil cuando tienes estados complejos o cuando necesitas realizar acciones más sofisticadas sobre tu estado.</P>
                 </div>
 
                 <H2 text='Parámetros' />
                 <div className="pb-12">
-                    <P text='reducer - funciones de nuestro estado' />
-                    <P text='initalState - datos iniciales de nuestro estado' />
+                    <P>reducer - funciones de nuestro estado</P>
+                    <P>initalState - datos iniciales de nuestro estado</P>
                 </div>
 
                 <H3 text='reducer' />
                 <div className="">
-                    <P text='state -> los datos actuales del estado' />
-                    <P text='action -> los datos que me envian' />
+                    <P>state - los datos actuales del estado</P>
+                    <P>action - los datos que me envian'</P>
                 </div>
 
                 <div className="pb-12">
@@ -36,14 +36,14 @@ export default function UseReducer() {
 
                 <H2 text='Ejemplo' />
                 <div className="pb-12">
-                    <P text='Es una simple lista de tareas.' />
+                    <P>Es una simple lista de tareas.</P>
                 </div>
 
                 <H3 text='Funcionalidades' />
                 <div>
-                    <P text='Añadir una tarea mediante el formulario.' />
-                    <P text='Cambiar el estado de la tarea al hacer click en ella.' />
-                    <P text='Eliminar la tarea al hacer click en X.' />
+                    <P>Añadir una tarea mediante el formulario.</P>
+                    <P>'Cambiar el estado de la tarea al hacer click en ella.</P>
+                    <P>Eliminar la tarea al hacer click en X.</P>
 
                     <CopyBlock
                         customStyle={{

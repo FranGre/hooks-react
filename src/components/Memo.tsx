@@ -13,21 +13,21 @@ export default function Memo() {
             <H1 text='memo' />
             <Article>
                 <div className="pb-12">
-                    <P text="Usado para mejorar el rendimiento, ya que evita que un componente se vuelva a renderizar innecesariamente. Básicamente, memoriza el resultado de un componente y lo vuelve a renderizar solo si sus propiedades han cambiado. Esto es útil para componentes funcionales que se están renderizando frecuentemente pero cuyas propiedades no cambian con frecuencia." />
+                    <P>Usado para mejorar el rendimiento, ya que evita que un componente se vuelva a renderizar innecesariamente. Básicamente, memoriza el resultado de un componente y lo vuelve a renderizar solo si sus propiedades han cambiado. Esto es útil para componentes funcionales que se están renderizando frecuentemente pero cuyas propiedades no cambian con frecuencia.</P>
                 </div>
                 <H2 text='Parámetros' />
                 <div className="pb-12">
-                    <P text='() -> dentro va todo nuestro componente que recibe los props' />
+                    <P>() - dentro va todo nuestro componente que recibe los props</P>
                 </div>
 
                 <H2 text='Consideraciones' />
                 <div className="pb-12">
-                    <P text='memo optimiza el rendimiento al reducir el número de renderizados.' />
+                    <P>memo optimiza el rendimiento al reducir el número de renderizados.</P>
                 </div>
 
                 <H2 text='Ejemplos' />
                 <div className="pb-12">
-                    <P text='Para ambos ejemplos, dentro de src creamos la carpeta components y dentro de components creamos Message.tsx' />
+                    <P>Para ambos ejemplos, dentro de src creamos la carpeta components y dentro de components creamos Message.tsx</P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
@@ -52,8 +52,8 @@ export default function Memo() {
 
                 <H3 text='Sin usar memo' />
                 <div className="pb-12">
-                    <P text='Cada vez que actualicemos el counter, se vuelve a hacer un renderizado del componente App. ' />
-                    <P text='Aunque el valor de text no haya cambiado, Message se vuelve a renderizar. Esto es ineficiente.' />
+                    <P>Cada vez que actualicemos el counter, se vuelve a hacer un renderizado del componente App.</P>
+                    <P>Aunque el valor de text no haya cambiado, Message se vuelve a renderizar. Esto es ineficiente.</P>
                     <Callout text='No tenemos que modificar Message.tsx' />
                     <CopyBlock
                         customStyle={{
@@ -100,8 +100,8 @@ export default function Memo() {
 
                 <H3 text='Usando memo (estático)' />
                 <div className="pb-12">
-                    <P text='Cada vez que actualicemos el counter, se vuelve a hacer un renderizado del componente App.' />
-                    <P text='Sin embargo, como vamos a añadir memo al componente que recibe las props. El Message no se va a volver a renderizar, debido a que el valor de la prop text que recibe, no ha sido modificado. Es estática.' />
+                    <P>Cada vez que actualicemos el counter, se vuelve a hacer un renderizado del componente App.</P>
+                    <P>Sin embargo, como vamos a añadir memo al componente que recibe las props. El Message no se va a volver a renderizar, debido a que el valor de la prop text que recibe, no ha sido modificado. Es estática.</P>
 
                     <Callout text='Tenemos que modificar Message.tsx' />
 
@@ -174,8 +174,8 @@ export default function Memo() {
 
                 <H3 text='Usando memo (dinámico)' />
                 <div>
-                    <P text='Simplemente le pasamos a text un dato dinámico, en este caso el counter.' />
-                    <P text='Por lo tanto, como el valor de counter se va modificando cada vez que + o -, pues Message se irá renderizado a medida que se actualize el valor de counter.' />
+                    <P>Simplemente le pasamos a text un dato dinámico, en este caso el counter.</P>
+                    <P>Por lo tanto, como el valor de counter se va modificando cada vez que + o -, pues Message se irá renderizado a medida que se actualize el valor de counter.</P>
 
                     <Callout text='Tenemos que modificar App.tsx' /><CopyBlock
                         customStyle={{
@@ -240,7 +240,6 @@ export default function Memo() {
         })
 
         export default Message
-    
                         `} />
                 </div>
             </Article>

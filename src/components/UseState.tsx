@@ -11,14 +11,14 @@ export default function UseState() {
             <H1 text='useState()' />
             <Article>
                 <div className="pb-12">
-                    <P text='Usado para que el cliente que pueda ver los nuevos cambios del estado o variable en tiempo real' />
-                    <P text='Cabe destacar que useState es usado para estados / variables simples.' />
+                    <P>Usado para que el cliente que pueda ver los nuevos cambios del estado o variable en tiempo real' </P>
+                    <P>Cabe destacar que useState es usado para estados / variables simples.'</P>
                 </div>
 
                 <H2 text='Ejemplo' />
                 <div>
-                    <P text='Funciona devolviendo un arreglo con dos elementos: el estado actual y una función para actualizar ese estado.' />
-                    <P text='Por ejemplo, puedes usar useState para crear una variable de estado llamada count que comienza en 0.' />
+                    <P>Funciona devolviendo un arreglo con dos elementos: el estado actual y una función para actualizar ese estado.'</P>
+                    <P>Por ejemplo, puedes usar useState para crear una variable de estado llamada count que comienza en 0.' </P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',

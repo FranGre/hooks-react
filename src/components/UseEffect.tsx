@@ -13,14 +13,14 @@ export default function UseEffect() {
             <H1 text='useEffect()' />
             <Article>
                 <div className="pb-12">
-                    <P text="Es un hook muy usado, se ejecuta en cada renderizado del componente, incluido en el primer renderizado del componente." />
+                    <P>Es un hook muy usado, se ejecuta en cada renderizado del componente, incluido en el primer renderizado del componente.</P>
                 </div>
                 <H2 text='Parámetros' />
                 <div className="pb-12">
-                    <P text="Recibe 2 parámetros" />
+                    <P>Recibe 2 parámetros</P>
                     <ul className="pl-12">
-                        <li><P text="función anónima -> dentro añades todo el js / ts que quieras" /></li>
-                        <li><P text="array de dependencias -> más info abajo" /></li>
+                        <li><P>función anónima - dentro añades todo el js / ts que quieras</P></li>
+                        <li><P>array de dependencias - más info abajo</P></li>
                     </ul>
                     <CopyBlock
                         customStyle={{
@@ -54,26 +54,26 @@ export default function UseEffect() {
 
                 <H2 text='Consideraciones' />
                 <div className="pb-12">
-                    <P text='1ro se declara el useEffect() luego el resto de funciones' />
-                    <P text='No puedes usar useEffect dentro de un método, pero si puedes usar métodos dentro de useEffect' />
-                    <P text='Cuando pasas variables al array de dependencias, estás diciendo: 
-                    "Hey React, si alguna de estas variables cambia su valor, 
-                    quiero que vuelvas a ejecutar aquellos useEffect que tienen
-                    en su array de dependencias estas variables que han sido actualizadas.'/>
-                    <P text='Podemos tener todos los useEffect que queramos' />
+                    <P>1ro se declara el useEffect() luego el resto de funciones'</P>
+                    <P>No puedes usar useEffect dentro de un método, pero si puedes usar métodos dentro de useEffect</P>
+                    <P>Cuando pasas variables al array de dependencias, estás diciendo:
+                        "Hey React, si alguna de estas variables cambia su valor,
+                        quiero que vuelvas a ejecutar aquellos useEffect que tienen
+                        en su array de dependencias estas variables que han sido actualizadas.</P>
+                    <P>Podemos tener todos los useEffect que queramos.</P>
                 </div>
 
                 <H2 text='Usos' />
                 <div className="pb-12">
-                    <P text='Llamadas a APIs' />
-                    <P text='Actualización del DOM' />
-                    <P text='Efectos secundarios una vez el componente haya sido montado, actulizado o desmontado' />
+                    <P>Llamadas a APIs</P>
+                    <P>Actualización del DOM</P>
+                    <P>Efectos secundarios una vez el componente haya sido montado, actulizado o desmontado</P>
                 </div>
 
                 <H2 text='Ejemplos' />
                 <H3 text='Array sin dependencias' />
                 <div className="pb-12">
-                    <P text='Ideal para cargar info de una APi. Ya que el useEffect solo se ejecutará cada vez que entremos de nuevo al componente.' />
+                    <P>Ideal para cargar info de una APi. Ya que el useEffect solo se ejecutará cada vez que entremos de nuevo al componente.</P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
@@ -120,7 +120,7 @@ export default function UseEffect() {
 
                 <H3 text='Array con dependencias' />
                 <div className="pb-12">
-                    <P text='Cada vez que se cargue de nuevo el componente, cargará el useEffect() sin dependencias y cuando se modifique el valor de counter, solo va a ejecutar el useEffect() que tiene como pendencias la variable counter.' />
+                    <P>Cada vez que se cargue de nuevo el componente, cargará el useEffect() sin dependencias y cuando se modifique el valor de counter, solo va a ejecutar el useEffect() que tiene como pendencias la variable counter.</P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
@@ -171,7 +171,7 @@ export default function UseEffect() {
 
                 <H3 text='Array con dependencias totales' />
                 <div>
-                    <P text='Si decidimos no poner el array de dependencias, quiere decir que el useEffect va a depender de cualquier cambio que se haga en el componente. Por lo tanto, a mínimo cambio, se me ejecutará el useEffect()' />
+                    <P>Si decidimos no poner el array de dependencias, quiere decir que el useEffect va a depender de cualquier cambio que se haga en el componente. Por lo tanto, a mínimo cambio, se me ejecutará el useEffect().</P>
                     <Callout text='Aviso, casi nunca se debería usar sin array, ya que suele provocar un loop infinito' />
                     <CopyBlock
                         customStyle={{
