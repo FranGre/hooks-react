@@ -6,6 +6,7 @@ import UseCallback from './components/UseCallback'
 import Memo from './components/Memo'
 import UseMemo from './components/UseMemo'
 import UseReducer from './components/UseReducer'
+import UseContext from './components/UseContext'
 
 interface Route {
     path: string;
@@ -21,4 +22,5 @@ export const routes: Route[] = [
     { path: '/memo', name: 'memo', element: createElement(Memo) },
     { path: '/useMemo', name: 'useMemo()', element: createElement(UseMemo) },
     { path: '/useReducer', name: 'useReducer()', element: createElement(UseReducer) },
+    { path: '/useContext', name: 'useContext()', element: createElement(UseContext) },
 ];
