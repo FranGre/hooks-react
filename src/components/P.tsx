@@ -1,5 +1,7 @@
-export default function P({ text }: { text: string }) {
+import { ReactNode } from "react"
+
+export default function P({ children }: { children: ReactNode }) {
     return (
-        <p className="py-1">{text}</p>
+        <p className="py-1">{children}</p>
     )
 }
