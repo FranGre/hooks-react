@@ -14,10 +14,10 @@ export default function UseMemo() {
             <H1 text='useMemo()' />
             <Article>
                 <div className="pb-12">
-                    <P>Permite <Highlight backgroundColor="bg-cyan-600">memorizar</Highlight> el resultado
-                        de una <Highlight backgroundColor="bg-cyan-600">función</Highlight> y
-                        la <Highlight backgroundColor="bg-cyan-600">vuelve a ejecutar</Highlight> si el valor
-                        de las <Highlight backgroundColor="bg-cyan-600">dependencias ha cambiado.</Highlight>
+                    <P>Permite <Highlight backgroundColor="bg-sky-600">memorizar</Highlight> el resultado
+                        de una <Highlight backgroundColor="bg-sky-600">función</Highlight> y
+                        la <Highlight backgroundColor="bg-sky-600">vuelve a ejecutar</Highlight> si el valor
+                        de las <Highlight backgroundColor="bg-sky-600">dependencias ha cambiado.</Highlight>
                         Sinó, guarda la función en memoria y así ya no la vuelve a ejecutar.</P>
                     <P>Esto es útil cuando tienes una función costosa en términos de rendimiento y
                         quieres evitar que se ejecute nuevamente en cada renderizado, siempre que
@@ -34,7 +34,7 @@ export default function UseMemo() {
 
                 <H2 text='Consideraciones'></H2>
                 <div className="pb-12">
-                    <P>Array de <Highlight backgroundColor="bg-cyan-600">dependencias obligatorio</Highlight></P>
+                    <P>Array de <Highlight backgroundColor="bg-sky-600">dependencias obligatorio</Highlight></P>
                     <P>Cada vez que se modifique el valor de las varibales del array de dependencias,
                         automáticamente se volverá a ejecutar dicho useMemo() y lo de dentro de él.</P>
                 </div>
@@ -42,9 +42,9 @@ export default function UseMemo() {
                 <H2 text='Ejemplos'></H2>
                 <H3 text='Sin useMemo()' />
                 <div className="pb-12">
-                    <P>Os propongo realizar varias veces la misma operación con los <Highlight backgroundColor="bg-cyan-600">mismos numbers</Highlight>, vereis en la consola que se <Highlight backgroundColor="bg-cyan-600">vuelve a llamar a calculate.</Highlight></P>
+                    <P>Os propongo realizar varias veces la misma operación con los <Highlight backgroundColor="bg-sky-600">mismos numbers</Highlight>, vereis en la consola que se <Highlight backgroundColor="bg-sky-600">vuelve a llamar a calculate.</Highlight></P>
                     <Callout text='Esto es innecesario. Ya que si los valores de numbers no han cambiado, el resultado es el mismo. Por lo tanto no tiene porque volver a ejecutarse calculate.' />
-                    <P>Esto es un <Highlight backgroundColor="bg-cyan-600">problema de rendimiento.</Highlight></P>
+                    <P>Esto es un <Highlight backgroundColor="bg-sky-600">problema de rendimiento.</Highlight></P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
@@ -97,8 +97,8 @@ export default function UseMemo() {
 
                 <H3 text='Usando useMemo()' />
                 <div>
-                    <P>Os propongo realizar varias veces la misma operación con los <Highlight backgroundColor="bg-cyan-600">mismos numbers</Highlight>,
-                        vereis en la consola que ya <Highlight backgroundColor="bg-cyan-600">NO se vuelve a llamar a calculate.</Highlight></P>
+                    <P>Os propongo realizar varias veces la misma operación con los <Highlight backgroundColor="bg-sky-600">mismos numbers</Highlight>,
+                        vereis en la consola que ya <Highlight backgroundColor="bg-sky-600">NO se vuelve a llamar a calculate.</Highlight></P>
                     <Callout text='Ya que como el resultado es el mismo, ya no tiene la necesidad de volver a ejecutar calculate.' />
                     <P>Solucionado el problema de rendimiento</P>
                     <CopyBlock

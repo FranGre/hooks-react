@@ -110,10 +110,10 @@ export default function Memo() {
                     <P>Cada vez que actualicemos el counter, se vuelve a hacer un renderizado del
                         componente App.</P>
                     <P>Sin embargo, como vamos a añadir memo al componente que recibe las props.
-                        El Message <Highlight backgroundColor="bg-cyan-600">no se va a volver a
-                            renderizar</Highlight>, debido a que el valor de la prop <Highlight backgroundColor="bg-cyan-600">
+                        El Message <Highlight backgroundColor="bg-sky-600">no se va a volver a
+                            renderizar</Highlight>, debido a que el valor de la prop <Highlight backgroundColor="bg-sky-600">
                             text</Highlight> que recibe,
-                        no ha sido modificado. Es <Highlight backgroundColor="bg-cyan-600">estática.</Highlight>
+                        no ha sido modificado. Es <Highlight backgroundColor="bg-sky-600">estática.</Highlight>
                     </P>
 
                     <Callout text='Tenemos que modificar Message.tsx' />
@@ -187,8 +187,8 @@ export default function Memo() {
 
                 <H3 text='Usando memo (dinámico)' />
                 <div>
-                    <P>Simplemente le pasamos a <Highlight backgroundColor="bg-cyan-600">text</Highlight> un
-                        dato <Highlight backgroundColor="bg-cyan-600">dinámico</Highlight>,
+                    <P>Simplemente le pasamos a <Highlight backgroundColor="bg-sky-600">text</Highlight> un
+                        dato <Highlight backgroundColor="bg-sky-600">dinámico</Highlight>,
                         en este caso el counter.</P>
                     <P>Por lo tanto, como el valor de counter se va modificando cada vez que + o -,
                         pues Message se irá renderizado a medida que se actualize el valor de counter.</P>
