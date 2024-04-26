@@ -13,7 +13,7 @@ export default function NavBar() {
         <>
             <nav className="flex pb-6">
                 <div className="flex items-center justify-between w-full"> {/* Div para alinear elementos en el NavBar */}
-                    <div className="block sm:hidden"> {/* Mostrar solo en dispositivos pequeños */}
+                    <div className="block md:hidden"> {/* Mostrar solo en dispositivos pequeños */}
                         <button onClick={toggleMenu}>
                             <svg
                                 className="h-6 w-6 fill-current"
@@ -28,7 +28,7 @@ export default function NavBar() {
                             </svg>
                         </button>
                     </div>
-                    <ul className={`sm:flex ${isOpen ? 'block' : 'hidden'}`}> {/* Mostrar en dispositivos más grandes */}
+                    <ul className={`md:flex ${isOpen ? 'block' : 'hidden'}`}> {/* Mostrar en dispositivos más grandes */}
                         {routes.map((route) => (
                             <li key={route.path} className="py-2 px-3">
                                 <Link to={route.path}>{route.name}</Link>
