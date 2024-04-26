@@ -5,6 +5,7 @@ import Article from "./Article"
 import P from "./P"
 import Callout from "./Callout"
 import { CopyBlock, atomOneDark } from 'react-code-blocks'
+import Highlight from "./Highlight"
 
 
 export default function UseReducer() {
@@ -15,19 +16,19 @@ export default function UseReducer() {
 
             <Article >
                 <div className="pb-12">
-                    <P>Permite manejar estados de una forma más avanzada que useState, es especialmente útil cuando tienes estados complejos o cuando necesitas realizar acciones más sofisticadas sobre tu estado.</P>
+                    <P>Permite manejar estados de una forma más avanzada que useState, es especialmente útil cuando tienes <Highlight backgroundColor="bg-cyan-600">estados complejos</Highlight> o cuando necesitas realizar acciones más sofisticadas sobre tu estado.</P>
                 </div>
 
                 <H2 text='Parámetros' />
                 <div className="pb-12">
-                    <P>reducer - funciones de nuestro estado</P>
-                    <P>initalState - datos iniciales de nuestro estado</P>
+                    <P>reducer - <Highlight backgroundColor="bg-cyan-600">funciones</Highlight> de nuestro estado</P>
+                    <P>initalState - <Highlight backgroundColor="bg-cyan-600">datos iniciales</Highlight> de nuestro estado</P>
                 </div>
 
                 <H3 text='reducer' />
                 <div className="">
-                    <P>state - los datos actuales del estado</P>
-                    <P>action - los datos que me envian'</P>
+                    <P>state - los <strong>datos actuales</strong> del estado</P>
+                    <P>action - los <strong>datos que me envian</strong></P>
                 </div>
 
                 <div className="pb-12">
@@ -41,9 +42,9 @@ export default function UseReducer() {
 
                 <H3 text='Funcionalidades' />
                 <div>
-                    <P>Añadir una tarea mediante el formulario.</P>
-                    <P>'Cambiar el estado de la tarea al hacer click en ella.</P>
-                    <P>Eliminar la tarea al hacer click en X.</P>
+                    <P><strong>Añadir</strong> una tarea mediante el formulario.</P>
+                    <P><strong>Cambiar el estado</strong> de la tarea al hacer click en ella.</P>
+                    <P><strong>Eliminar</strong> la tarea al hacer click en X.</P>
 
                     <CopyBlock
                         customStyle={{
