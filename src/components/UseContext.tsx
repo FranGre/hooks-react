@@ -5,6 +5,8 @@ import Article from "./Article"
 import P from "./P"
 import Callout from "./Callout"
 import { CopyBlock, atomOneDark } from 'react-code-blocks'
+import Highlight from "./Highlight"
+
 
 export default function UseContext() {
 
@@ -14,16 +16,16 @@ export default function UseContext() {
 
             <Article>
                 <div className="pb-12">
-                    <P>Usado para crear estados globales simples.</P>
+                    <P>Usado para crear <Highlight backgroundColor="bg-cyan-600">estados globales simples.</Highlight></P>
                     <P>Imagina que tienes datos que quieres que estén disponibles para varios componentes y no quieres pasar esos datos a través de múltiples niveles de componentes, por props. Ahí es donde el contexto entra en juego.</P>
                 </div>
 
                 <H2 text='Pasos' />
                 <H3 text='1 - Crear el contexto y el provider' />
                 <div className="pb-12">
-                    <P>Provider posee toda la lógica, es decir, las variables, métodos para guardar, eliminar etc...</P>
+                    <P><Highlight backgroundColor="bg-cyan-600">Provider</Highlight> posee toda la <Highlight backgroundColor="bg-cyan-600">lógica</Highlight>, es decir, las <strong>variables</strong>, <strong>métodos para guardar, eliminar</strong> etc...</P>
                     <P>Fijaros que también hago uso de useState(), es decir que si queremos complicarlo más, podríamos usar useReducer().</P>
-                    <P>En value añadimos todas las variables, funciones etc... que queramos que estñen disponibles para el resto de componentes.</P>
+                    <P>En <Highlight backgroundColor="bg-cyan-600">value</Highlight> añadimos todas las <Highlight backgroundColor="bg-cyan-600">variables, funciones</Highlight> etc... que queramos que <strong>estén disponibles</strong> para el <strong>resto de componentes.</strong></P>
                     <CopyBlock
                         customStyle={{
                             marginTop: '25px',
@@ -137,7 +139,7 @@ export default function UseContext() {
                 </div>
 
                 <Callout text='useContext no es una alternativa a Zustand o Redux. useContext es usado para estados globales sencillos.' />
-            </Article>
+            </Article >
         </>
     )
 }
