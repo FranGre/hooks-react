@@ -7,7 +7,7 @@ export default function NavBar() {
 
     const toggleMenu = () => {
         setIsOpen(!isOpen)
-    };
+    }
 
     return (
         <>
